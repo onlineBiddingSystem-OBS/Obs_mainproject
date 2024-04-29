@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import LoginPage from './loginpage';
+import RegisterPage from './registerpage';
 
-function App() {
+const App = () => {
+  const [isLoginPage, setIsLoginPage] = useState(true);
+
+  const goToRegistration = () => {
+    setIsLoginPage(false);
+  };
+
+  const goToLogin = () => {
+    setIsLoginPage(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isLoginPage ? <LoginPage goToRegistration={goToRegistration} /> : <RegisterPage goToLogin={goToLogin} />}
     </div>
   );
-}
+};
 
 export default App;
