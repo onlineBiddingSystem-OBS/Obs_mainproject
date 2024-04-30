@@ -1,5 +1,5 @@
 import React from 'react';
-import './register.css'; // Import CSS file for styling
+import './login1.css'; // Import CSS file for styling
 
 const RegisterPage = ({ goToLogin }) => {
   return (

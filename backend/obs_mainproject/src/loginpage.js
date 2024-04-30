@@ -1,9 +1,9 @@
 import React from 'react';
-import './login.css'; // Import CSS file for styling
+import './login1.css'; // Import CSS file for styling
 
 const LoginPage = ({ goToRegistration }) => {
   return (
-    <div className="login-container">
+    <div className="login-container font-sans">
       <h2>Login</h2>
       <form>
         <div className="form-group">
@@ -15,7 +15,13 @@ const LoginPage = ({ goToRegistration }) => {
           <input type="password" id="password" name="password" />
         </div>
         <button type="submit">Login</button>
+        <a href='www.kartikyeda.com'>Forgot password?</a>
       </form>
+      <div>
+      <input type ="checkbox" id='remember' name='remember'/>
+      <label for="remember">Remember me</label>
+      </div>
+      
       <p>Don't have an account? <button onClick={goToRegistration}>Register</button></p>
     </div>
   );
