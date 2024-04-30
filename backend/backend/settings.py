@@ -24,9 +24,9 @@ SECRET_KEY = 'django-insecure-j#i4ao$k#x8q1j-x6(xu!m29zaq3=y)5jc(hmqxvlco_xn3g-0
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['8000-onlinebiddi-obsmainproj-e7z8ur0jpq2.ws-us110.gitpod.io']
-
+# hrishabh = 8000-onlinebiddi-obsmainproj-bcf46toned4.ws-us110.gitpod.io
+# kartik = 8000-onlinebiddi-obsmainproj-e7z8ur0jpq2.ws-us110.gitpod.io
+ALLOWED_HOSTS = ['8000-onlinebiddi-obsmainproj-bcf46toned4.ws-us110.gitpod.io']
 
 # Application definition
 
