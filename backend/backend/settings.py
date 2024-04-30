@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+print(BASE_DIR)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-j#i4ao$k#x8q1j-x6(xu!m29zaq3=y)5jc(hmqxvlco_xn3g-0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['8000-onlinebiddi-obsmainproj-e7z8ur0jpq2.ws-us110.gitpod.io']
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'obs_mainproject/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'react-tailwind-template/dist/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -115,11 +115,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/assets/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'obs_mainproject/build/static')
+    os.path.join(BASE_DIR,'react-tailwind-template', 'dist', 'assets')
 ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
